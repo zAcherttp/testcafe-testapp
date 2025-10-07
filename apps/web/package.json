@@ -5,7 +5,11 @@
   "scripts": {
     "build": "vite build",
     "serve": "vite preview",
-    "dev": "vite dev --port=3001"
+    "dev": "vite dev --port=3001",
+    "test:e2e": "testcafe chrome tests/e2e/**/*.test.ts --app \"pnpm run dev\" --app-init-delay 3000",
+    "test:e2e:headless": "testcafe chrome:headless tests/e2e/**/*.test.ts --app \"pnpm run dev\" --app-init-delay 3000",
+    "test:e2e:multi": "testcafe chrome,firefox,edge tests/e2e/**/*.test.ts --app \"pnpm run dev\" --app-init-delay 3000",
+    "test:e2e:ci": "testcafe chrome:headless tests/e2e/**/*.test.ts --app \"pnpm run dev\" --app-init-delay 3000 --screenshots path=tests/screenshots,takeOnFails=true --reporter spec,json:tests/reports/e2e-report.json"
   },
   "dependencies": {
     "radix-ui": "^1.4.2",
@@ -46,6 +50,8 @@
     "typescript": "catalog:",
     "vite": "^7.0.2",
     "web-vitals": "^5.0.3",
-    "@tanstack/react-query-devtools": "^5.85.5"
+    "@tanstack/react-query-devtools": "^5.85.5",
+    "testcafe": "^3.7.2",
+    "@types/node": "^22.18.8"
   }
 }

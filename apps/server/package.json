@@ -7,24 +7,28 @@
     "check-types": "tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
     "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "testcafe chrome tests/api/**/*.test.ts --app \"pnpm run dev\" --app-init-delay 3000",
+    "test:headless": "testcafe chrome:headless tests/api/**/*.test.ts --app \"pnpm run dev\" --app-init-delay 3000",
+    "test:api": "testcafe chrome tests/api/todo-api.test.ts --app \"pnpm run dev\" --app-init-delay 3000"
   },
   "dependencies": {
-    "hono": "^4.8.2",
-    "@hono/node-server": "^1.14.4",
-    "@trpc/server": "catalog:",
+    "@hono/node-server": "^1.19.5",
     "@hono/trpc-server": "^0.4.0",
-    "better-auth": "catalog:",
-    "dotenv": "catalog:",
-    "zod": "catalog:",
     "@testcafe-testapp/api": "workspace:*",
     "@testcafe-testapp/auth": "workspace:*",
-    "@testcafe-testapp/db": "workspace:*"
+    "@testcafe-testapp/db": "workspace:*",
+    "@trpc/server": "catalog:",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "hono": "^4.9.10",
+    "testcafe": "^3.7.2",
+    "zod": "catalog:"
   },
   "devDependencies": {
-    "typescript": "catalog:",
-    "tsx": "^4.19.2",
-    "@types/node": "^22.13.11",
-    "tsdown": "catalog:"
+    "@types/node": "^22.18.8",
+    "tsdown": "catalog:",
+    "tsx": "^4.20.6",
+    "typescript": "catalog:"
   }
 }

@@ -1,0 +1,110 @@
+{
+  "startTime": "2025-10-07T18:34:19.528Z",
+  "endTime": "2025-10-07T18:34:21.696Z",
+  "userAgents": ["Chrome 140.0.0.0 / Windows 11"],
+  "passed": 10,
+  "total": 10,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "API Tests - Todo CRUD",
+      "path": "E:\\Web\\testcafe-testapp\\apps\\server\\tests\\api\\todo-api.test.ts",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Should fetch all todos (GET)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 261,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should create a new todo (POST)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 131,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should validate todo creation requires text",
+          "meta": {},
+          "errs": [],
+          "durationMs": 91,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should toggle todo completion status",
+          "meta": {},
+          "errs": [],
+          "durationMs": 150,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should delete a todo",
+          "meta": {},
+          "errs": [],
+          "durationMs": 128,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle multiple todo operations in sequence",
+          "meta": {},
+          "errs": [],
+          "durationMs": 161,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should return proper content-type headers",
+          "meta": {},
+          "errs": [],
+          "durationMs": 91,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle concurrent todo creations",
+          "meta": {},
+          "errs": [],
+          "durationMs": 130,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should verify API response structure",
+          "meta": {},
+          "errs": [],
+          "durationMs": 110,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should measure API response time",
+          "meta": {},
+          "errs": [],
+          "durationMs": 86,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "The \"src\" and \"browsers\" options from the configuration file will be ignored."
+  ]
+}

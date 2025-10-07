@@ -1,0 +1,31 @@
+{
+  "browsers": ["chrome", "edge"],
+  "src": "tests/e2e/**/*.test.ts",
+  "screenshots": {
+    "path": "tests/screenshots",
+    "takeOnFails": true,
+    "fullPage": true
+  },
+  "quarantineMode": false,
+  "skipJsErrors": false,
+  "skipUncaughtErrors": false,
+  "selectorTimeout": 10000,
+  "assertionTimeout": 5000,
+  "pageLoadTimeout": 30000,
+  "speed": 1,
+  "concurrency": 1,
+  "reporter": [
+    {
+      "name": "spec"
+    },
+    {
+      "name": "json",
+      "output": "tests/reports/e2e-report.json"
+    }
+  ],
+  "compilerOptions": {
+    "typescript": {
+      "configPath": "tests/tsconfig.json"
+    }
+  }
+}
