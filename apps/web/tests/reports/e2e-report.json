@@ -1,0 +1,503 @@
+{
+  "startTime": "2025-10-08T00:21:14.571Z",
+  "endTime": "2025-10-08T00:25:29.885Z",
+  "userAgents": [
+    "Chrome 140.0.0.0 / Windows 11",
+    "Microsoft Edge 141.0.0.0 / Windows 11"
+  ],
+  "passed": 49,
+  "total": 50,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Authentication - E2E Tests",
+      "path": "E:\\testcafe-testapp\\apps\\web\\tests\\e2e\\authentication.test.ts",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Should display sign-up form by default",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2303,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should switch between sign-up and sign-in forms",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1825,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should sign up with valid credentials and redirect to dashboard",
+          "meta": {},
+          "errs": [],
+          "durationMs": 7370,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signup-success.png",
+          "skipped": false
+        },
+        {
+          "name": "Should sign up then sign in with same account succeeds",
+          "meta": {},
+          "errs": [],
+          "durationMs": 19315,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signup-signin-success.png",
+          "skipped": false
+        },
+        {
+          "name": "Should show validation errors for invalid email",
+          "meta": {},
+          "errs": [],
+          "durationMs": 6877,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should show validation errors for short password",
+          "meta": {},
+          "errs": [],
+          "durationMs": 6962,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should navigate form using keyboard (Keyboard Navigation)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3985,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle hover on form elements (Element Interactions)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3919,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle focus on form inputs (Element Interactions)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4023,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should show validation errors when submitting empty form",
+          "meta": {},
+          "errs": [],
+          "durationMs": 7879,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signup-validation-errors.png",
+          "skipped": false
+        },
+        {
+          "name": "Should be responsive on mobile (Responsive Design)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5555,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-mobile-view.png",
+          "skipped": false
+        },
+        {
+          "name": "Should measure sign-up performance",
+          "meta": {},
+          "errs": [],
+          "durationMs": 7691,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should log authentication API requests",
+          "meta": {},
+          "errs": [],
+          "durationMs": 9675,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should execute client-side JavaScript for form validation",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4307,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should take screenshot on authentication failure",
+          "meta": {},
+          "errs": [],
+          "durationMs": 10128,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signin-failure.png",
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Home Page - E2E Tests",
+      "path": "E:\\testcafe-testapp\\apps\\web\\tests\\e2e\\home.test.ts",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Should display home page with ASCII art title",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4576,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-loaded.png",
+          "skipped": false
+        },
+        {
+          "name": "Should show API connection status",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4439,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should make successful API health check request",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4503,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should load page within acceptable time (Performance)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4370,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should be responsive on tablet viewport (Responsive Design)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5342,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-tablet.png",
+          "skipped": false
+        },
+        {
+          "name": "Should be responsive on desktop viewport (Responsive Design)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5824,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-desktop.png",
+          "skipped": false
+        },
+        {
+          "name": "Should execute client-side JavaScript correctly",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3531,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should navigate using keyboard (Keyboard Navigation)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3741,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle hover interactions (Element Interactions)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3815,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle focus interactions (Element Interactions)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3932,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should measure resource loading performance",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4469,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should verify URL is correct",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3459,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should verify page sections are present",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1003,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle page refresh correctly",
+          "meta": {},
+          "errs": [],
+          "durationMs": 6603,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should log API requests (Request Logging)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4434,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should take screenshot on test completion",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5554,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-final.png",
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Todos - E2E Tests",
+      "path": "E:\\testcafe-testapp\\apps\\web\\tests\\e2e\\todos.test.ts",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Should display todos page",
+          "meta": {},
+          "errs": [],
+          "durationMs": 7288,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-page-loaded.png",
+          "skipped": false
+        },
+        {
+          "name": "Should display empty message when no todos exist",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3769,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should add a new todo successfully",
+          "meta": {},
+          "errs": [],
+          "durationMs": 8480,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-added.png",
+          "skipped": false
+        },
+        {
+          "name": "Should add todo using Enter key (Keyboard Navigation)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 7619,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should toggle todo completion status",
+          "meta": {},
+          "errs": [
+            "AssertionError: Todo should be marked as completed: expected false to be truthy\n\nBrowser: Chrome 140.0.0.0 / Windows 11\nScreenshot: E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\2025-10-08_07-21-13\\test-36\\Chrome_140.0.0.0_Windows_11\\errors\\1.png\n\n   122 |\n   123 |  // Verify it's marked as completed (check via aria-checked attribute)\n   124 |  const todoIndex = (await todosPage.getTodoCount()) - 1;\n   125 |  const isCompleted = await todosPage.isTodoCompleted(todoIndex);\n   126 |\n > 127 |  await t.expect(isCompleted).ok(\"Todo should be marked as completed\");\n   128 |\n   129 |  // Toggle back\n   130 |  await todosPage.toggleTodoByText(todoText);\n   131 |  await t.wait(1000);\n   132 |\n\n   at <anonymous> (E:\\testcafe-testapp\\apps\\web\\tests\\e2e\\todos.test.ts:127:31)\n   at fulfilled (E:\\testcafe-testapp\\apps\\web\\tests\\e2e\\todos.test.ts:5:58)"
+          ],
+          "durationMs": 7852,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\2025-10-08_07-21-13\\test-36\\Chrome_140.0.0.0_Windows_11\\errors\\1.png",
+          "skipped": false
+        },
+        {
+          "name": "Should delete a todo",
+          "meta": {},
+          "errs": [],
+          "durationMs": 6527,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle multiple todo operations",
+          "meta": {},
+          "errs": [],
+          "durationMs": 11493,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should disable add button when input is empty",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4103,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should be responsive on mobile (Responsive Design)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 7454,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-mobile-view.png",
+          "skipped": false
+        },
+        {
+          "name": "Should be responsive on tablet (Responsive Design)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 7216,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-tablet-view.png",
+          "skipped": false
+        },
+        {
+          "name": "Should hover over todo items (Element Interactions)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 6243,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should focus on todo input (Element Interactions)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 4013,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should measure todo operations performance (Performance)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 11523,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should log API requests for todo operations (Request Logging)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 16852,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should execute client-side JavaScript for todo manipulation",
+          "meta": {},
+          "errs": [],
+          "durationMs": 15735,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should handle concurrent todo additions (Concurrent Requests)",
+          "meta": {},
+          "errs": [],
+          "durationMs": 12716,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should display correct todo count",
+          "meta": {},
+          "errs": [],
+          "durationMs": 3740,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should verify todos persist after page refresh",
+          "meta": {},
+          "errs": [],
+          "durationMs": 9267,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Should take screenshot on failure",
+          "meta": {},
+          "errs": [],
+          "durationMs": 5236,
+          "unstable": false,
+          "screenshotPath": "E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-test-screenshot.png",
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "The \"skipJsErrors\" option from the configuration file will be ignored.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signup-success.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signup-signin-success.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signup-validation-errors.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-mobile-view.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\auth-signin-failure.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-loaded.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-tablet.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-desktop.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\home-page-final.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-page-loaded.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-added.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-mobile-view.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-tablet-view.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way.",
+    "The file at \"E:\\testcafe-testapp\\apps\\web\\tests\\screenshots\\todos-test-screenshot.png\" already exists. It has just been rewritten with a recent screenshot. This situation can possibly cause issues. To avoid them, make sure that each screenshot has a unique path. If a test runs in multiple browsers, consider including the user agent in the screenshot path or generate a unique identifier in another way."
+  ]
+}

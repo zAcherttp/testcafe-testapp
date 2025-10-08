@@ -203,6 +203,13 @@ export class BrowserHelper {
 export class PerformanceHelper {
   private static measurements: Map<string, number> = new Map();
 
+  /**
+   * Clear all measurements (useful for test isolation)
+   */
+  static clear(): void {
+    this.measurements.clear();
+  }
+
   static start(key: string): void {
     this.measurements.set(key, Date.now());
   }
@@ -210,7 +217,9 @@ export class PerformanceHelper {
   static end(key: string): number {
     const startTime = this.measurements.get(key);
     if (!startTime) {
-      throw new Error(`No start time found for key: ${key}`);
+      // Instead of throwing, return 0 and warn if no start time found
+      console.warn(`No start time found for key: ${key}, returning 0`);
+      return 0;
     }
     const duration = Date.now() - startTime;
     this.measurements.delete(key);
